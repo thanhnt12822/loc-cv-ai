@@ -3,7 +3,8 @@ import streamlit as st
 from google import genai
 
 OLLAMA_URL = "Cloud Gemini API"
-OLLAMA_MAC_DINH = "gemini-2.5-flash"
+MODEL_MAC_DINH = "gemini-2.5-flash"
+
 def lay_client():
     # Lấy API Key từ Secrets của Streamlit Cloud hoặc biến môi trường
     api_key = st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY"))
